@@ -20,6 +20,3 @@ The equations are integrated over 400 time steps and the results are ploted belo
 <img src="./Figures/Lotka_Predictions_data_first400.jpg"/>
 
 The trained LSTM is used to predict the two dimensions one step into the future. The predictions are then used to propagate the systems 250 steps into the future.
-The results are shown below:
-
-<img src="./Figures/LV_Propagated_Predictions.jpg"/>
