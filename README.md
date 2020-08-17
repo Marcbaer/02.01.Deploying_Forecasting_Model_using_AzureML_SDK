@@ -3,7 +3,7 @@
 This experiment trains an LSTM for forecasting the two dimensional Lotka-Volterra System. 
 The predictions are then propagated *n* steps into the future.
 
-The model is finally deployed on MS Azure using the Azure ML Software Developement Toolkit.
+The model is finally deployed on MS Azure using the Azure ML Software Development Toolkit.
 
 *02.01 Lotka Volterra System*
 
