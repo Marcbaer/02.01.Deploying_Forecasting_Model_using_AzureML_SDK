@@ -13,8 +13,8 @@ The Lotka Volterra equations are a system of two differential equations that des
 
 <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial y}{\partial t} \ = \delta xy - \gamma y">
 
-Where $x$ represents the total number of preys, $y$ the number of predators and $\alpha,\beta,\delta, \gamma$ are parameters describing the interaction of the two populations.
+Where *x* represents the total number of preys, *y* the number of predators and $\alpha,\beta,\delta, \gamma$ are parameters describing the interaction of the two populations.
 
 The equations are integrated over 400 time steps and the results are ploted below:
 
-<img src="./Figures/Lotka_Predictions_data_first400.jpg" width="350" height="300" />
+<img src="./Figures/Lotka_Predictions_data_first400.jpg"/>
