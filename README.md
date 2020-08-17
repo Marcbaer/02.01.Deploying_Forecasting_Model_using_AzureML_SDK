@@ -6,9 +6,13 @@ The predictions are then propagated *n* steps into the future.
 The model is finally deployed on MS Azure using the Azure ML Software Developement Toolkit.
 
 *02.01 Lotka Volterra System*
+
 The Lotka Volterra equations are a system of two differential equations that describe the dynamics of a predator and a pray population.
+
 <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial x}{\partial t} \ = \alpha x - \beta xy">
+
 <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial y}{\partial t} \ = \delta xy - \gamma y">
+
 Where $x$ represents the total number of preys, $y$ the number of predators and $\alpha,\beta,\delta, \gamma$ are parameters describing the interaction of the two populations.
 
 The equations are integrated over 400 time steps and the results are ploted below:
