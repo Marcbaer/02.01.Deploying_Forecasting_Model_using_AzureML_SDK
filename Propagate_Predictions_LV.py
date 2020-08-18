@@ -4,7 +4,7 @@ Propagate LSTM Predictions
 import numpy as np
 #Keras imports
 from tensorflow.keras.models import load_model
-from Train_LSTM_LV import Lotka_Volterra
+from LSTM_LV import Lotka_Volterra
 import matplotlib.pyplot as plt
 
 #Load model
