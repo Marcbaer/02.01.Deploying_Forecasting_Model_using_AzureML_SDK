@@ -4,22 +4,19 @@ Propagate LSTM Predictions
 import numpy as np
 #Keras imports
 from tensorflow.keras.models import load_model
-from Train_LSTM_LV import load_data
+from Train_LSTM_LV import Lotka_Volterra
 import matplotlib.pyplot as plt
+
 #Load model
 checkpoint_filepath='best_LV_LSTM.h5'
 model = load_model('best_LV_LSTM.h5')
 
 #Load point to be propagated
-shift=1
-sequence_length=12
-pred_mode=1
-n_features=2
-
-data=load_data(shift,pred_mode,sequence_length)
+LV=Lotka_Volterra()
+data=LV.data
 
 initial_point=data['test'][0][0]
-initial_point=initial_point.reshape((1, sequence_length, n_features))
+initial_point=initial_point.reshape((1, LV.sequence_length, LV.n_features))
 
 #propagate predictions into the future
 steps=300
@@ -33,7 +30,7 @@ for i in range(steps):
     history.append(new_point)
     print('step {}/{} predicted'.format(i,steps))
 
-res=predictions.reshape(steps,2)
+res=np.array(predictions).reshape(steps,2)
 
 #Plot Results
 plt.plot(res[:250,0],label='Predator Population')
