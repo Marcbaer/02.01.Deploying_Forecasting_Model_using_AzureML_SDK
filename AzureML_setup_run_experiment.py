@@ -1,10 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 18 11:28:36 2020
-
-@author: Marc
-"""
-
+#Run Experiment using MS Azure Machine Learning Services
 '''01. Connect to ML Workspace'''
 from azureml.core import Workspace, Datastore, Dataset
 
