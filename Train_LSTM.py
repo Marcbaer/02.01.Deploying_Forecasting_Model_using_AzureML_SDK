@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 18 11:21:04 2020
-
-@author: Marc
-"""
-
 import matplotlib.pyplot as plt
 from LSTM_LV import Lotka_Volterra
 
