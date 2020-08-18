@@ -20,3 +20,5 @@ The equations are integrated over 400 time steps and the results are ploted belo
 <img src="./Figures/Lotka_Predictions_data_first400.jpg"/>
 
 The trained LSTM is used to predict the two dimensions one step into the future. The predictions are then used to propagate the systems 250 steps into the future.
+
+The experiment is then deployed to run on an Azure VM using Azure Machine Learning Services (SDK). The setup script: [AzureML_setup_run_experiment.py](AzureML_setup_run_experiment.py).
